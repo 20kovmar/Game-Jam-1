@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 1132106539}
   - component: {fileID: 1132106540}
   m_Layer: 0
-  m_Name: ghost
+  m_Name: Angela Dai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
