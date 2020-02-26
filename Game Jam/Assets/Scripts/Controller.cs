@@ -10,7 +10,10 @@ public class Controller : MonoBehaviour
     public LayerMask groundLayer;
     private bool lookingLeft = false;
     private bool isLarge = false;
-    
+    private Rigidbody2D rb;
+    private Animator anim;
+    private Collider2D coll;
+
 
     // Checks if Player is on the ground currently
     bool isGrounded()
@@ -35,7 +38,9 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        float hDirection = Input.GetAxis("Horizontal");
+
+        if (hDirection > 0)
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             if (lookingLeft)
@@ -45,7 +50,7 @@ public class Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        else if (hDirection < 0)
         {
             transform.Translate(-Vector2.left * speed * Time.deltaTime);
             if (!lookingLeft)
@@ -55,7 +60,7 @@ public class Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
+        else if (Input.GetKeyDown(KeyCode.C))
         {
             if (!isLarge)
             {
@@ -67,7 +72,10 @@ public class Controller : MonoBehaviour
                 gameObject.transform.localScale -= new Vector3(1, 1, 1);
                 isLarge = false;
             }
-                
+            else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
