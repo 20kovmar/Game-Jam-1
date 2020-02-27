@@ -2695,8 +2695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jump: {x: 0, y: 20}
+  jump: {x: 0, y: 25}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   anim: {fileID: 1988198001}
+  p_collider: {fileID: 1988198004}

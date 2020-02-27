@@ -10,7 +10,9 @@ public class Controller : MonoBehaviour
     public LayerMask groundLayer;
     private bool lookingLeft = false;
     private bool isLarge = false;
+    private bool isCrouching = false;
     public Animator anim;
+    public BoxCollider2D p_collider;
 
 
     // Checks if Player is on the ground currently
@@ -30,8 +32,8 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
+
 
     // Update is called once per frame
     void Update()
@@ -57,6 +59,19 @@ public class Controller : MonoBehaviour
             }
         }
 
+        if((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && isGrounded())
+        {
+            anim.SetBool("isCrouching", true);
+            isCrouching = true;
+            p_collider.size = new Vector2(0.479f, 0.29f);
+        }
+        else
+        {
+            anim.SetBool("isCrouching", false);
+            isCrouching = false;
+            p_collider.size = new Vector2(0.479f, 0.45f);
+        }
+
         if (Input.GetKeyDown(KeyCode.C))
         {
             if (!isLarge)
@@ -73,7 +88,7 @@ public class Controller : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) 
         {
             Jump();
         }
@@ -82,7 +97,7 @@ public class Controller : MonoBehaviour
     // Player Jump Movement function
     void Jump()
     {
-        if (!isGrounded())
+        if (!isGrounded() || isCrouching)
         {
             return;
         }

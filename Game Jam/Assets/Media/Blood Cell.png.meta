@@ -8,6 +8,21 @@ TextureImporter:
   - first:
       213: -5413885007822142439
     second: Blood Cell_1
+  - first:
+      213: -2702157670651535052
+    second: Blood Cell_0
+  - first:
+      213: 1639570753267790363
+    second: Blood Cell_1
+  - first:
+      213: -20773687385499588
+    second: Blood Cell_2
+  - first:
+      213: 3825806777853217764
+    second: Blood Cell_2
+  - first:
+      213: 3131374288805934251
+    second: Blood Cell_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -118,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfcf31609280006a0800000000000000
-      internalID: -6485174491124859651
+      spriteID: 431e7b94ae1008ad0800000000000000
+      internalID: -2702157670651535052
       vertices: []
       indices: 
       edges: []
@@ -128,8 +143,8 @@ TextureImporter:
       name: Blood Cell_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 27
+        x: 120
+        y: 123
         width: 54
         height: 45
       alignment: 0
@@ -139,8 +154,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914c2f5f4440ed4b0800000000000000
-      internalID: -5413885007822142439
+      spriteID: b1275acc9ece0c610800000000000000
+      internalID: 1639570753267790363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Cell_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 27
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb09359efef71530800000000000000
+      internalID: 3825806777853217764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Cell_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 27
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4b11f2350e47b20800000000000000
+      internalID: 3131374288805934251
       vertices: []
       indices: 
       edges: []
