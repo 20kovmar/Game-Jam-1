@@ -1732,12 +1732,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1988198003}
   - component: {fileID: 1988198002}
-  - component: {fileID: 1988198001}
   - component: {fileID: 1988198004}
   - component: {fileID: 1988198005}
   - component: {fileID: 1988198006}
+  - component: {fileID: 1988198001}
   m_Layer: 0
-  m_Name: Slime
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,7 +1753,7 @@ Animator:
   m_GameObject: {fileID: 1988198000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6e335976e4fca54cbc8785d7f4084e3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2c6bd604f8cb806498c278d96cc68aad, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1801,7 +1801,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3273413227493412716, guid: 3c7e8720ec35a0e40abb7ba9d910071c,
+  m_Sprite: {fileID: -6485174491124859651, guid: 659310e29abd9d3468991cffe61b296d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1844,7 +1844,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 0.9375}
+    oldSize: {x: 0.48, y: 0.45}
     newSize: {x: 1.25, y: 0.9375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
