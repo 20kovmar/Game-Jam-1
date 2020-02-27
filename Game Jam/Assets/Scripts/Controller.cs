@@ -10,9 +10,7 @@ public class Controller : MonoBehaviour
     public LayerMask groundLayer;
     private bool lookingLeft = false;
     private bool isLarge = false;
-    private Rigidbody2D rb;
-    private Animator anim;
-    private Collider2D coll;
+    public Animator anim;
 
 
     // Checks if Player is on the ground currently
@@ -32,15 +30,14 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        float hDirection = Input.GetAxis("Horizontal");
 
-        if (hDirection > 0)
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             if (lookingLeft)
@@ -50,7 +47,7 @@ public class Controller : MonoBehaviour
             }
         }
 
-        else if (hDirection < 0)
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             transform.Translate(-Vector2.left * speed * Time.deltaTime);
             if (!lookingLeft)
@@ -60,21 +57,19 @@ public class Controller : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (!isLarge)
             {
-                gameObject.transform.localScale += new Vector3(1, 1, 1);
+                anim.SetBool("isLarge", true);
+                gameObject.transform.localScale += new Vector3(-3, 3, 3);
                 isLarge = true;
             }
             else if (isLarge)
             {
-                gameObject.transform.localScale -= new Vector3(1, 1, 1);
+                anim.SetBool("isLarge", false);
+                gameObject.transform.localScale -= new Vector3(-3, 3, 3);
                 isLarge = false;
-            }
-            else
-            {
-                rb.velocity = new Vector2(0, rb.velocity.y);
             }
         }
 
