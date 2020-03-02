@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: "(\u0E07'\u0300-'\u0301)\u0E07"
   productName: Game Jam
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}

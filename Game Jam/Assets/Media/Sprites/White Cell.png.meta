@@ -9,17 +9,14 @@ TextureImporter:
       213: -1653490206925474318
     second: White Cell_1
   - first:
-      213: 567844945535637731
-    second: White Cell_0
-  - first:
-      213: 565186869033253778
-    second: White Cell_1
-  - first:
       213: 4640935117031721115
     second: White Cell_2
   - first:
       213: 7624342961073492246
     second: White Cell_3
+  - first:
+      213: 1649326799088682454
+    second: White Cell_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -119,10 +116,10 @@ TextureImporter:
       name: White Cell_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 123
-        width: 48
-        height: 45
+        x: 13
+        y: 124
+        width: 63
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +137,10 @@ TextureImporter:
       name: White Cell_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 27
-        width: 54
-        height: 45
+        x: 82
+        y: 127
+        width: 86
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,6 +150,69 @@ TextureImporter:
       bones: []
       spriteID: 2f5be98da6f9d09e0800000000000000
       internalID: -1653490206925474318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White Cell_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 71
+        width: 70
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98cf4476e9e76040800000000000000
+      internalID: 4640935117031721115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White Cell_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 73
+        width: 82
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6111980178b1fc960800000000000000
+      internalID: 7624342961073492246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White Cell_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 6
+        width: 66
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5863a3cf593e610800000000000000
+      internalID: 1649326799088682454
       vertices: []
       indices: 
       edges: []
