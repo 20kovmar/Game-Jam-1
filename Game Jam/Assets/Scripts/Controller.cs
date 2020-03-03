@@ -9,7 +9,7 @@ public class Controller : MonoBehaviour
     public Vector2 jump;
     public LayerMask groundLayer;
     private bool lookingLeft = false;
-    private bool isLarge = false;
+    public static bool isLarge = false;
     private bool isCrouching = false;
     public Animator anim;
     public BoxCollider2D p_collider;
