@@ -9,7 +9,6 @@ public class Controller : MonoBehaviour
     public Vector2 jump;
     public LayerMask groundLayer;
     private bool lookingLeft = false;
-    public static bool isLarge = false;
     private bool isCrouching = false;
     public Animator anim;
     public BoxCollider2D p_collider;
@@ -72,21 +71,7 @@ public class Controller : MonoBehaviour
             p_collider.size = new Vector2(0.479f, 0.45f);
         }
 
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            if (!isLarge)
-            {
-                anim.SetBool("isLarge", true);
-                gameObject.transform.localScale += new Vector3(-3, 3, 3);
-                isLarge = true;
-            }
-            else if (isLarge)
-            {
-                anim.SetBool("isLarge", false);
-                gameObject.transform.localScale -= new Vector3(-3, 3, 3);
-                isLarge = false;
-            }
-        }
+        
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) 
         {

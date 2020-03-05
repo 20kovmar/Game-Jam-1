@@ -26,7 +26,7 @@ public class Attack : MonoBehaviour
     {
         if (attackTime <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.X) && !attacking && Controller.isLarge)
+            if (Input.GetKeyDown(KeyCode.X) && !attacking && Powerup.isLarge)
             {
                 animator.SetTrigger("isAttacking");
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemyLayer);
