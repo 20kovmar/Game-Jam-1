@@ -71,7 +71,12 @@ public class Controller : MonoBehaviour
             p_collider.size = new Vector2(0.479f, 0.45f);
         }
 
-        
+        if(Input.GetKeyDown(KeyCode.C) && Powerup.isLarge)
+        {
+            anim.SetBool("isLarge", false);
+            gameObject.transform.localScale -= new Vector3(-3, 3, 3);
+            Powerup.isLarge = false;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) 
         {
