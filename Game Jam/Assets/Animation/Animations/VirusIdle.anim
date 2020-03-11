@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WhiteIdle
+  m_Name: VirusIdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2426644663920612158, guid: db7ea757327477e4f8089e6ef6f4305a,
+      value: {fileID: 3428258685976407377, guid: 2cccf6cbbbe637541ae0d33be9337f23,
         type: 3}
     - time: 0.033333335
-      value: {fileID: -1653490206925474318, guid: db7ea757327477e4f8089e6ef6f4305a,
+      value: {fileID: -7304752941503343141, guid: 2cccf6cbbbe637541ae0d33be9337f23,
         type: 3}
     - time: 0.06666667
-      value: {fileID: -2426644663920612158, guid: db7ea757327477e4f8089e6ef6f4305a,
+      value: {fileID: 3428258685976407377, guid: 2cccf6cbbbe637541ae0d33be9337f23,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,9 +47,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2426644663920612158, guid: db7ea757327477e4f8089e6ef6f4305a, type: 3}
-    - {fileID: -1653490206925474318, guid: db7ea757327477e4f8089e6ef6f4305a, type: 3}
-    - {fileID: -2426644663920612158, guid: db7ea757327477e4f8089e6ef6f4305a, type: 3}
+    - {fileID: 3428258685976407377, guid: 2cccf6cbbbe637541ae0d33be9337f23, type: 3}
+    - {fileID: -7304752941503343141, guid: 2cccf6cbbbe637541ae0d33be9337f23, type: 3}
+    - {fileID: 3428258685976407377, guid: 2cccf6cbbbe637541ae0d33be9337f23, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
