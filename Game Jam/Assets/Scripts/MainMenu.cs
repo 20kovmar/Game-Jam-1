@@ -8,5 +8,6 @@ public class MainMenu : MonoBehaviour
     public void PlayGame ()
     {
         SceneManager.LoadScene("Tutorial");
+        Health.health = 3;
     }
 }

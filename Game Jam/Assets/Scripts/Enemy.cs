@@ -9,10 +9,15 @@ public class Enemy : MonoBehaviour
     public float maxHealth;
     public GameObject obj;
     public Slider healthBar;
+    public float speed;
+    private Vector3 pos1;
+    private Vector3 pos2;
+    public Vector3 posDiff = new Vector3(10f, 0f, 0f);
     // Start is called before the first frame update
     void Start()
     {
-
+        pos1 = transform.position;
+        pos2 = transform.position + posDiff;
     }
 
     public void TakeDamage (int Damage){
@@ -31,6 +36,9 @@ public class Enemy : MonoBehaviour
     void Update()
     {
       healthBar.value = CalculateHealth();
+        transform.position = Vector3.Lerp(pos1, pos2, (Mathf.Sin(speed * Time.time) + 1.0f) / 2.0f);
+
+
     }
 
     public void Die (){

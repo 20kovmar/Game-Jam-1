@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject player ;
     private Vector3 offset;
     public float minX;
     public float maxX;
@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
       offset = transform.position - player.transform.position;
     }
 

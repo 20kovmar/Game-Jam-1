@@ -49,7 +49,7 @@ public class Health : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Health.health -= 1;
+            health -= 1;
         }
     }
 

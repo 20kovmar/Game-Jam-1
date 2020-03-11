@@ -88,6 +88,7 @@ public class Controller : MonoBehaviour
         {
             Scene currentScene = SceneManager.GetActiveScene(); 
             SceneManager.LoadScene(currentScene.name);
+            Health.health = 3;
         }
     }
 
