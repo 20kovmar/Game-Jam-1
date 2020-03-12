@@ -55,6 +55,6 @@ public class Health : MonoBehaviour
 
     void GameOver()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Tutorial");
     }
 }

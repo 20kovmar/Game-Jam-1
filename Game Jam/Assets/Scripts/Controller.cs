@@ -86,8 +86,7 @@ public class Controller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Scene currentScene = SceneManager.GetActiveScene(); 
-            SceneManager.LoadScene(currentScene.name);
+            SceneManager.LoadScene("Tutorial");
             Health.health = 3;
         }
     }
