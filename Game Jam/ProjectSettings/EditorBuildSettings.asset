@@ -9,9 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 86502a5b20f08704fbf074f34fdc6ef4
   - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 4f0657179fc87d74d8fc7620d4ff9a89
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 4b27fc702dfd14943890a470d68b1763
+  - enabled: 1
+    path: Assets/Scenes/Final Boss 1.unity
+    guid: 7e0d67b6d4a1abb4ba572169965d8ded
+  - enabled: 1
+    path: Assets/Scenes/Nano.unity
+    guid: f4e921bc71e07d845bfea6a4b18790c5
+  - enabled: 1
+    path: Assets/Scenes/Final Boss 2.unity
+    guid: ebf8933b8653fe445a362a822350b112
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: c57cff3857e047f4793dbd60025073b1
   m_configObjects: {}

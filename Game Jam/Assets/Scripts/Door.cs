@@ -10,8 +10,14 @@ public class Door : MonoBehaviour
     {
         if (other.CompareTag("Player") && (Input.GetKey(KeyCode.Z) && !(Powerup.isLarge)))
         {
-            
+            if (Health.fallen && SceneManager.GetActiveScene().name == "Level 1")
+            {
+                SceneManager.LoadScene("Nano");
+            } else
+            {
                 Advance();
+            }
+                
         }
     }
 

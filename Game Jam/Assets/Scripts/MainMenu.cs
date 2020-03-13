@@ -7,7 +7,13 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame ()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Death");
         Health.health = 3;
+        
+    }
+
+    public void Return ()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }

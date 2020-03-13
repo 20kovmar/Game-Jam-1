@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 {
     public static int health = 3;
     public int numOfHearts;
+    public static bool fallen = false;
 
     public Image[] hearts;
     public Sprite fullHeart;
@@ -15,6 +16,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
+
         if(health > numOfHearts)
         {
             health = numOfHearts;
@@ -55,6 +57,11 @@ public class Health : MonoBehaviour
 
     void GameOver()
     {
-        SceneManager.LoadScene("Tutorial");
+        if(SceneManager.GetActiveScene().name == "Final Boss 1")
+        {
+            fallen = true;
+        }
+        SceneManager.LoadScene("Death");
+        health = 3;
     }
 }

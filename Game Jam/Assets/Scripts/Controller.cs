@@ -86,7 +86,7 @@ public class Controller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Tutorial");
+            SceneManager.LoadScene("Death");
             Health.health = 3;
         }
     }
